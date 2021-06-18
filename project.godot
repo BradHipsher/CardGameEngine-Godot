@@ -11,7 +11,17 @@ config_version=4
 [application]
 
 config/name="CardGameEngine"
+run/main_scene="res://main/Game.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+Global="*res://main/Global.gd"
+
+[display]
+
+window/size/width=1600
+window/size/height=900
 
 [physics]
 
@@ -19,5 +29,4 @@ common/enable_pause_aware_picking=true
 
 [rendering]
 
-quality/driver/driver_name="GLES3"
 environment/default_environment="res://default_env.tres"
